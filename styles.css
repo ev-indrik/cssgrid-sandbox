@@ -49,7 +49,7 @@ grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 
 .sidebar {
     grid-column: 2/3;
-    background-color: darkolivegreen;
+    background-color: rgb(117, 139, 78);
     padding: 30px;
 }
 
@@ -67,7 +67,38 @@ grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
     padding: 0px 0px 0px 30px;
 }
 
+
+
+.main_gallery_items {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery_item {
+    position: relative;
+    padding: 0px 0px 85% 0px;
+}
+
+.gallery_item_big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
 .footer {
-    background-color: forestgreen;
+    background-color: rgb(117, 139, 78);
     grid-area: footer;
 }
