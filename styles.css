@@ -41,6 +41,30 @@ ul {
 
 .main {
 grid-area: main;
+padding: 30px 15px;
+display: grid;
+grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+
+}
+
+.sidebar {
+    grid-column: 2/3;
+    background-color: darkolivegreen;
+    padding: 30px;
+}
+
+.sidebar_menu_items {
+    color: rgb(250,230,191);
+    font-size: 20px;
+}
+
+.sidebar_list li {
+    margin: 0px 0px 15px 0px;
+}
+
+.content {
+    grid-column: 3/4;
+    padding: 0px 0px 0px 30px;
 }
 
 .footer {
