@@ -95,6 +95,9 @@ grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
     object-fit: cover;
 }
 
+.products {
+    margin-left: 30px;
+}
 
 .products_items {
 display: grid;
@@ -133,12 +136,44 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     color: rgb(117, 139, 78);
     letter-spacing: 2px;
     background-color: rgb(250,230,191);
+    border-radius: 10%;
     padding: 0px 20px;
     line-height: 40px;
     justify-self: start;
 }
 
 .footer {
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+    padding: 20px;
     background-color: rgb(117, 139, 78);
     grid-area: footer;
+    color: rgb(250,230,191);
+    font-size: 18px;
+    align-items: center;
+  
+}
+
+.footer_link {
+    text-decoration: none;
+    color: rgb(250,230,191);
+    
+}
+
+.footer_copyright {
+    grid-column: 2/3;
+}
+
+.footer_text{
+    grid-column: 3/4;
+    text-align: right;
+}
+
+h1 {
+    color: rgb(129, 73, 181);
+    font-size: 32px;
+}
+
+h2 {
+    color: rgb(117, 139, 78);
 }
