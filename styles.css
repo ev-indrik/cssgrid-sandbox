@@ -119,7 +119,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 .product_item img {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
