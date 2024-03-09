@@ -41,7 +41,7 @@ ul {
 
 .main {
 grid-area: main;
-padding: 30px 15px;
+padding: 10px 0px;
 display: grid;
 grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 
@@ -101,28 +101,34 @@ grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 
 .products_items {
 display: grid;
-column-gap: 30px;
-row-gap: 50px;
+column-gap: 16px;
+row-gap: 16px;
 grid-template-columns: repeat(3, 1fr);
 }
 
 .product_item {
+   
+    /* position: relative; */
+    /* padding: 10px; */
+    /* margin: 0px 0px 20px 0px; */
+    color: rgb(117, 139, 78);
+    border: 1px solid rgba(228, 224, 231, 0.383);
+    box-shadow: 0px 0px 5px #fafafa6b;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.product_item_wrapper {
+    padding: 10px;
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 0.5fr 05.fr minmax(100px, 1fr);
-    /* position: relative; */
-    /* padding: 0px 0px 90% 0px; */
-    margin: 0px 0px 20px 0px;
-    color: rgb(117, 139, 78);
-    border: 1px solid red;
-    height: 100%;
 }
 
 .product_image_wrapper {
 position: relative;
 overflow: hidden;
-min-height: 350px;
-border: 1px solid green;
+min-height: 250px;
 }
 
 .product_image_wrapper img {
@@ -144,12 +150,14 @@ border: 1px solid green;
 .product_button {
     text-transform: uppercase;
     color: rgb(117, 139, 78);
-    letter-spacing: 2px;
+    font-size: 14px;
     background-color: rgb(250,230,191);
-    border-radius: 10%;
+    border-radius: 4px;
     padding: 0px 20px;
-    line-height: 40px;
-    justify-self: start;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .footer {
